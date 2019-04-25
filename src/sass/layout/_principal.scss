@@ -1,0 +1,15 @@
+.principal {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+
+    @include responsive(tab-port) { // width < 900?
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10%;
+    }
+}
+
+

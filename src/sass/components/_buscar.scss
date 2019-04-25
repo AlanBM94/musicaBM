@@ -1,0 +1,67 @@
+.form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+
+    &--cancion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include responsive(tab-port) { // width < 900?
+        width: 80%;
+    }
+
+    
+    &__input {
+        text-align: center;
+        font-family: inherit;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid $color-gris;
+        padding: .5rem;
+        width: 50%;
+        font-size: 1.3rem;
+
+        @include responsive(phone){
+            width: 80%;
+        }
+
+        &::placeholder{
+            color: $color-gris;
+        }
+        &--blanco {
+            border-bottom: 1px solid $color-blanco;
+            color: $color-blanco; 
+        }
+        &--blanco::placeholder{
+            color: $color-blanco;
+        }
+    }
+    &__button {
+        background-color: transparent;
+        border: none;
+        position: relative;
+
+        &:focus {
+            outline: none;
+            cursor: pointer;
+        }
+    }
+    &__input:focus {
+        outline: none;
+    }
+    
+    &__icono {
+        @include tamañoIcono;
+        position: absolute;
+        top: .9rem;
+        left: .3rem;
+        fill: $color-gris;
+        &--blanco {
+            fill: $color-blanco;
+        }
+    }
+}

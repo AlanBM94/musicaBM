@@ -1,0 +1,17 @@
+export const elementos = {
+    formArtista: document.querySelector('.form--artista'),
+    busquedaInputArtista: document.querySelector('.form__input'),
+    contenedorSpinner: document.querySelector('.informacion-artista '),
+    informacionArtistaContenedor: document.querySelector('.informacion-general'),
+    informacionAlbumesContenedor: document.querySelector('.listaAlbumes'),
+    botonBuscarLanzamientos: document.querySelector('.form--lanzamientos'),
+    lanzamientosContenedor: document.querySelector('.lista-lanzamientos'),
+    inputLanzamiento: document.querySelector('.form__input--lanzamientos'),
+    formCancion: document.querySelector('.form--cancion'),
+    botonCancionBlanco: document.querySelector('.btn-buscar--blanco'),
+    inputCancion: document.querySelector('.form__input--cancion'),
+    inputArtista: document.querySelector('.form__input--artista'),
+    contenedorLetra: document.querySelector('.contenedor-letra__contenido'),
+    contenedorAnalisis: document.querySelector('.contenedor-letra__analisis'),
+    contenedorLikes: document.querySelector('.likes__list'),
+}

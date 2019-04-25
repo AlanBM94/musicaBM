@@ -1,0 +1,125 @@
+.contenedor-letra {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @include responsive(tab-land) {
+        width: 95%;
+    }
+
+    @include responsive(tab-port){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+
+    }
+    
+    @include responsive(phone){
+        width: 75%;
+    }
+    
+    &__analisis {
+        width: 45%;
+        padding: 5rem;
+        display: flex;
+        justify-content: center;
+    
+        
+        @include responsive(tab-land) {
+            width: 50%;
+            padding: 0;
+        }
+
+        @include responsive(tab-port){
+            width: 95%;
+        }
+        
+    }
+    
+    &__contenido {
+        font-size: 1.4rem;
+        color: $color-blanco;
+        line-height: 125%;
+        text-align: justify;
+        width: 45%;
+        padding: 5rem;
+
+        @include responsive(tab-land) {
+            width: 50%;
+        }
+
+        @include responsive(tab-port){
+            width: 95%;
+
+        }
+
+        @include responsive(phone){
+            font-size: 1.3rem;
+            margin-top: 3rem;
+            padding: 0;
+        }
+        
+    }
+    
+    &__contenido p {
+        @include animacionApareceContenido;
+
+    }
+
+}
+
+.contenedor-analisis {
+    background-color: $color-blanco;
+    width: 70%;
+    height: 100%;
+    box-shadow: 0 1rem 2rem rgba(black,.2);
+    border-radius: 1rem;
+    padding-bottom: 3rem;
+    // display: none;
+    @include animacionApareceContenido;
+
+    @include responsive(phone){
+        width: 90%;
+    }
+    
+    &__titulo {
+        @include centrarHorizontalmente;
+        text-align: center;
+        padding: 3rem;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        width: 100%;
+        display: inline-block;
+        background-image: linear-gradient(to right bottom, $color-primario-claro-3, $color-primario-oscuro);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(phone){
+            margin-left: 0;
+            transform: translateX(0);
+        }
+    }
+
+}
+
+.contenedor-analisis-lista{
+    @include centrarHorizontalmente;
+    list-style: none;
+
+    &__item:not(:last-child){
+        margin-bottom: 1.3rem;
+    }
+
+    &__item {
+        color: $color-primario;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        & span {
+            color: $color-primario-claro-2;
+            font-weight: 400;
+        }
+    }
+}
+

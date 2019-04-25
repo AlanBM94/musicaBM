@@ -1,0 +1,17 @@
+.logo {
+    font-size: 2rem;
+    color: $color-blanco;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+    margin-left: 2rem;
+    &::before{
+        content: 'BM';
+        position: absolute;
+        color: $color-blanco;
+        font-weight: 400;   
+        font-size: 1rem;
+        top: .3rem;
+        left: 7.6rem;
+    }
+}

@@ -1,0 +1,7 @@
+.artistaFavorito {
+    background-color: $color-primario-superClaro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include paddingSecciones;
+}

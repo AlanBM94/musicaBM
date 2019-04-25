@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    background-color: $color-primario;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}

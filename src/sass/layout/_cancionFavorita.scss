@@ -1,0 +1,7 @@
+.cancion-favorita {
+    @include paddingSecciones;
+    background-image: linear-gradient(to right bottom, $color-primario, $color-primario-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

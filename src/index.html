@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Música BM</title>
+</head>
+<body>
+    <!-- Sección de Header y la bienvenida -->
+    <div class="contenedor">
+        <header class="header">
+            <!-- Menú responsivo  -->
+            <div class="nav-responsive">
+                <input type="checkbox" class="nav-responsive__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="nav-responsive__btn">
+                    <span class="nav-responsive__icono">&nbsp;</span>
+                </label>
+                <div class="nav-responsive__contenedor">
+                    <div class="nav-responsive__item nav-responsive__item--1 "><a href="#">Busca tu artista favorito</a></div>
+                    <div class="nav-responsive__item nav-responsive__item--2 "><a href="#">Descubre las lanzamientos</a></div>
+                    <div class="nav-responsive__item nav-responsive__item--3 "><a href="#">Encuentra la letra de tu canción favorita</a></div>
+                </div>
+            </div>
+            <!-- Menú Responsivo -->
+            <h4 class="logo">Música</h4>
+            <ul class="nav">
+                <li class="nav__item--normal"><a href="#">Busca tu artista favorito</a></li>
+                <li class="nav__item--normal"><a href="#">Descubre las lanzamientos</a></li>
+                <li class="nav__item--normal"><a href="#">Encuentra la letra de tu canción favorita</a></li>
+                <div class="likes">
+                    <div class="likes__field">
+                        <svg class="likes__icon">
+                            <use href="img/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
+                    <div class="likes__panel">
+                        <ul class="likes__list">
+                            <!-- <li>
+                                <div class="likes__link" href="#23456">
+                                    <figure class="likes__fig">
+                                        <img src="img/Artista-imagen.jpg" alt="Test">
+                                    </figure>
+                                    <div class="likes__data">
+                                        <h4 class="likes__name">Arctic Monkeys</h4>
+                                        <p class="likes__genre">Rock</p>
+                                    </div>
+                                    <div class="likes__btn">
+                                        <a href="#">
+                                            <svg class="likes__btn--buscar">
+                                                <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="likes__btn--eliminar">X</a>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </header>
+        <div class="principal">
+            <div class="textoPrincipal">
+                <h1 class="textoPrincipal--grande">Música para todos</h1>
+                <h2 class="textoPrincipal--pequeño">Busca tu artista preferido, descubre las lanzamientos y reproduce y busca la letra de tu canción favorita.</h2>
+            </div>
+            <div class="imagenPrincipal">
+                <img src="img/undraw_compose_music_ovo2.svg" alt="">
+            </div>
+        </div>
+        <!-- -------------------------- -->
+        <div class="App">
+            <a href='http://localhost:8888'> Login to Spotify to start </a>
+        </div>
+        <!-- Sección artista favorito -->
+        <section class="artistaFavorito" id="artista-favorito">
+            <div class="titulo">
+                <h2 class="titulo--grande">Busca tu artista favorito</h2>
+                <h3 class="titulo--pequeño">Encuentra información de tu artista favorito como álbumes, canciones, género, etc</h3>
+            </div>
+            <form action="#" class="form form--artista margen-arriba-grande">
+                <input type="text" class="form__input" placeholder="Busca tú artista favorito">
+                <button class="form__button">
+                    <svg class="form__icono">
+                        <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="informacion-artista margen-arriba-grande">
+                <!-- <div class="spinner--azul">
+                    <svg class="iformacion-general__icono">
+                        <use xlink:href="img/symbol-defs.svg#icon-loop2"></use>
+                    </svg>
+                </div> -->
+                <div class="informacion-general">
+                    <!-- <div class="informacion-general__foto">
+                        <img src="img/Artista-imagen.jpg" alt="Artista">
+                    </div>
+                    <a href="#">
+                        <svg class="informacion-general__like--inactivo">
+                            <use href="img/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </a>
+                    <h3 class="informacion-general__nombre-artista">
+                        Arctic Monkeys 
+                    </h3>
+                    <div class="informacion-general__datos-generales">
+                        <ul class="lista-datos">
+                            <li class="lista-datos__item">Género: <span>Rock</span></li>
+                            <li class="lista-datos__item">Género: <span>Rock</span></li>
+                            <li class="lista-datos__item">Género: <span>Rock</span></li>
+                            <li class="lista-datos__item">Género: <span>Rock</span></li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="informacion-albumes">
+                    <!-- <h3 class="informacion-albumes__titulo">
+                            Álbumes
+                    </h3> -->
+                    <div class="informacion-albumes__lista">
+                        
+                        <ul class="listaAlbumes margen-arriba-grande">
+                            <!-- <li class="listaAlbumes__item">
+                                <div class="album">
+                                    <img src="img/Album-imagen.jpg" alt="" class="album__foto">
+                                    <div class="album__descripcion">
+                                        <p class="album__descripcion--grande">
+                                            Defector
+                                        </p>
+                                        <p class="album__descripcion--pequeña">
+                                            12 canciones
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>  -->
+                        </ul>
+                    </div>  
+                </div>  
+            </div> 
+        </section>
+        <!-- Sección de lanzamientos -->
+        <section class="lanzamientos" id="descubre-lanzamientos">
+            <div class="titulo">
+                <h2 class="titulo--grande">Descubre los lanzamientos de tu ciudad</h2>
+                <h3 class="titulo--pequeño">¿Qué es lo que está escuchando la gente?</h3>
+            </div>
+            <form action="#" class="form form--artista margen-arriba-grande form--lanzamientos">
+                <!-- <input type="text" class="form__input" placeholder="Busca tú artista favorito"> -->
+                <select id="country" name="country" class="form__input form__input--lanzamientos">
+                    <option value="JP">Japón</option>
+                    <option value="IL">Israel</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="MY">Malasia</option>
+                    <option value="PH">Filipinas</option>
+                    <option value="SG">Singapur</option>
+                    <option value="TW">Taiwán</option>
+                    <option value="TH">Tailandia</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="IN">India</option>
+                    <option value="AD">Andorra</option>
+                    <option value="BE">Bélgica</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="CY">Chipre</option>
+                    <option value="CZ">Republica Checa</option>
+                    <option value="DK">Dinamarca</option>
+                    <option value="EE">Estonia</option>
+                    <option value="FI">Finlandia</option>
+                    <option value="FR">Francia</option>
+                    <option value="DD">Alemania</option>
+                    <option value="GR">Grecia</option>
+                    <option value="HU">Hungría</option>
+                    <option value="IS">Islandia</option>
+                    <option value="IE">Irlanda</option>
+                    <option value="IT">Italia</option>
+                    <option value="LV">Letonia</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lituania</option>
+                    <option value="LU">Luxemburgo</option>
+                    <option value="MT">Malta</option>
+                    <option value="MC">Monaco</option>
+                    <option value="NL">Paises Bajos</option>
+                    <option value="NO">Noruega</option>
+                    <option value="PL">Polonia</option>
+                    <option value="PT">Portugal</option>
+                    <option value="RO">Rumania</option>
+                    <option value="SK">Eslovaquia</option>
+                    <option value="ES">España</option>
+                    <option value="SE">Suecia</option>
+                    <option value="CH">Suiza</option>
+                    <option value="TR">Turquia</option>
+                    <option value="GB">Reino Unido</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CL">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="ES">República Dominicana</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="HN">Honduras</option>
+                    <option value="MX">México</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="PA">Panama</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Perú</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="CA">Canada</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="DZ">Argelia</option>
+                    <option value="EG">Egipto</option>
+                    <option value="MA">Marruecos</option>
+                    <option value="ZA">Sudáfrica</option>
+                    <option value="TN">Túnez</option>
+                    <option value="AU">Australia</option>
+                    <option value="NZ">Nueva Zelanda</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="JO">Jordán</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="LB">Líbano</option>
+                    <option value="OM">Omán</option>
+                    <option value="PS">Palestina</option>
+                    <option value="QA">Katar</option>
+                    <option value="SA">Arabia Saudita</option>
+                    <option value="AE">Emiratos Arabes Unidos</option>
+                </select>
+                <button class="form__button">
+                    <svg class="form__icono">
+                        <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <!-- <button class="btn-buscar btn-buscar--claro btn-buscar--animado margen-arriba-grande">
+                Buscar 
+            </button> -->
+            <!-- <div class="spinner--azul spinner--azul--lanzamientos">
+                <svg class="iformacion-general__icono">
+                    <use xlink:href="img/symbol-defs.svg#icon-loop2"></use>
+                </svg>
+            </div> -->
+            <ul class="lista-lanzamientos margen-arriba-mediano">
+                <!-- <li class="lista-lanzamientos__item">
+                    <div class="item-cancion">
+                        <svg class="item-cancion__icono">
+                            <use xlink:href="img/symbol-defs.svg#icon-triangle-right"></use>
+                        </svg>
+                        <img src="img/Album-imagen.jpg" alt="" class="item-cancion__imagen">
+                        <a href="#" class="item-cancion__nombre">
+                            <p>I bet you look goon on the dancefloor</p>
+                        </a>
+                        <p class="item-cancion__duracion">3:14</p>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+        <section class="cancion-favorita" id="cancion-favorita">
+            <div class="titulo">
+                <h2 class="titulo--grande titulo--grande--blanco">Busca la letra de tu cancion favorita</h2>
+                <h3 class="titulo--pequeño titulo--pequeño--blanco">Deja de pretender que sabes inglés y apréndete la letra de tu canción favorita
+                </h3>
+            </div>
+            <form action="#" class="form form--cancion margen-arriba-grande">
+                <input type="text" class="form__input form__input--blanco form__input--artista" placeholder="Artista">
+    
+                <input type="text" class="form__input form__input--blanco form__input--cancion margen-arriba-mediano" placeholder="Canción">
+                <button class="btn-buscar btn-buscar--claro btn-buscar--animado margen-arriba-grande btn-buscar--blanco btn-buscar--claro--blanco">
+                    Buscar 
+                </button>
+                <!-- <div class="spinner--azul spinner--blanco spinner--azul--lanzamientos">
+                    <svg class="iformacion-general__icono">
+                        <use xlink:href="img/symbol-defs.svg#icon-loop2"></use>
+                    </svg>
+                </div> -->
+            </form>
+            <div class="contenedor-letra margen-arriba-grande">
+                <div class="contenedor-letra__analisis">
+                    <!-- <div class="contenedor-analisis">
+                        <h4 class="contenedor-analisis__titulo">Analisis de Canción</h4>
+                        <ul class="contenedor-analisis-lista">
+                            <li class="contenedor-analisis-lista__item">Timbre: <span>0.5</span></li>
+                            <li class="contenedor-analisis-lista__item">Timbre: <span>0.5</span></li>
+                            <li class="contenedor-analisis-lista__item">Timbre: <span>0.5</span></li>
+                            <li class="contenedor-analisis-lista__item">Timbre: <span>0.5</span></li>
+                            <li class="contenedor-analisis-lista__item">Timbre: <span>0.5</span></li>
+                        </ul>
+                    </div> -->
+                </div>  
+               <div class="contenedor-letra__contenido">
+
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam placeat cupiditate voluptatum, id a reiciendis tempora tenetur dolorem corrupti, ad, reprehenderit harum quae dolor odio amet eaque odit. Tenetur, ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quisquam sequi ut vel deleniti dolores quidem ea tempore atque voluptate, sunt iusto facere accusamus laudantium modi eos autem aliquid eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga debitis quibusdam ex animi nostrum doloribus commodi odio, unde laboriosam hic incidunt tenetur libero quo iusto temporibus voluptatem quos in.
+                        Recusandae consectetur quia amet ut corrupti. Odit hic molestias molestiae non esse exercitationem dignissimos perferendis, veniam odio et ipsam corporis quam incidunt tenetur itaque fugit. Exercitationem fuga quibusdam sint reiciendis?
+                        Numquam nesciunt in molestias, assumenda laudantium maiores. Sit dignissimos quidem nemo fuga reiciendis praesentium, tenetur rerum vero ratione asperiores doloribus. Debitis voluptate quasi quia expedita. Est numquam distinctio a rerum!
+                        Amet, omnis accusantium sit culpa, aut, odit ex explicabo itaque fugiat dolorum voluptate voluptates deserunt recusandae molestiae perspiciatis necessitatibus! Nulla, enim nam nostrum adipisci quaerat impedit ab! Vel, non ab.
+                        Dolore consequuntur, non ea laboriosam facilis repellat rerum, molestiae doloribus ipsa ut iure veritatis autem deleniti fugiat labore unde soluta. Laboriosam hic et eius accusantium, dignissimos molestias nam harum deleniti.
+                    </p> -->
+               </div>
+            </div> 
+        </section>
+        <footer class="footer">
+            <div class="footer__superior">
+                <div class="footer__logo">
+                    <h4 class="logo">Música</h4>
+                </div>
+                <div class="footer__autor">
+                    <div class="autor">
+                        <img src="img/Alan.jpg" alt="Alan" class="autor__imagen">
+                        <p class="autor__descripcion">Creado por: Alan Beltrán Mendoza</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__inferior">
+                <p class="footer__texto">Creado con <span><svg class="footer__icono"><use xlink:href="img/symbol-defs.svg#icon-heart"></use></svg></span> en la Ciudad de México. © 2019 por Alan Beltrán Mendoza. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/bundle.js"></script>
+    <script src="web-api-auth-examples-master/authorization_code/app.js"></script>
+</body>
+</html>

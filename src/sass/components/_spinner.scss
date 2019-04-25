@@ -1,0 +1,35 @@
+.spinner--azul {
+    justify-self: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+    @include responsive(tab-port){
+        margin-left: 0;
+        transform: translateX(0);
+    }
+
+    & svg {
+    @include spinner;
+    fill: $color-primario;
+
+    @include spinnerResponsivo;
+
+    }
+    &--lanzamientos{
+        margin-top: 2rem;
+        margin-left: 0;
+        transform: translateX(0);
+    }
+
+}
+.spinner--blanco {
+    justify-self: center;
+    & svg {
+    fill: $color-blanco;
+
+    @include spinner;
+
+    @include spinnerResponsivo;
+    }
+
+}

@@ -1,0 +1,224 @@
+.informacion-artista{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;  
+    
+    @include responsive(tab-port) { // width < 900?
+        flex-direction: column;
+    }
+}
+
+.informacion-general {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & a {
+        height: 5rem;
+        width: 6rem;
+    }
+   
+    @include responsive(tab-port) { // width < 900?
+        width: 70%;
+        margin-bottom: 6rem;
+        flex-direction: column;
+    }
+
+    &__like {
+        fill: $color-primario;
+        stroke-width: 0.4px;
+        width: 6rem;
+        height: 6rem;
+        transition: all 0.3s;
+
+    }
+
+    
+    &__foto {
+        border-radius: 50%;
+        width: 70%;
+        @include animacionApareceContenido;
+        & img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            transition: all 0.2s;
+            backface-visibility: hidden;
+
+            @include responsive(tab-land){
+                border-radius: 50%;
+                width: 90%;
+            }
+            
+            @include responsive(tab-port){
+                border-radius: 50%;
+                width: 60%;
+            }
+        }
+    }
+
+    &__nombre-artista{
+        color: $color-primario;
+        font-size: 3.2rem;
+        width: 100%;
+        margin-top: 2rem;
+        
+        @include animacionApareceContenido;
+        @include responsive(tab-land){
+            font-size: 2.5rem;
+        }
+
+    }
+    &__datos-generales{
+        margin-top: 1.5rem;
+        text-align: center;
+        width: 75%;
+        @include animacionApareceContenido;
+        @include responsive(tab-port) { // width < 900?
+            text-align: center;
+        }
+    }
+}
+
+.lista-datos {
+    list-style: none;
+    &__item:not(:first-child){
+        @include margenItems;
+    }
+    &__item{
+        font-size: 1.3rem;
+        color: $color-primario-claro-2;
+        font-weight: 600;
+    }
+    &__item span{
+        color: $color-gris;
+        opacity: 0.8;
+    }
+}
+
+.informacion-albumes{
+    align-self: stretch;
+    text-align: center;
+    width: 50%;
+
+    @include responsive(tab-port){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__titulo {
+        color: $color-primario;
+        font-weight: 400;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        @include animacionApareceContenido;
+        @include responsive(tab-port) { // width < 900?
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    &__lista{
+        display: flex;
+        justify-content: flex-end;
+
+        @include responsive(tab-port){
+            width: 85%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include responsive(phone){
+            width: 100%;
+        }
+    }
+}
+.listaAlbumes {
+    width: 75%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include responsive(phone){
+        width: 90%;
+    }
+    
+    &__item{
+        width: 100%;
+        margin-left: 5rem;
+        @include animacionApareceContenido;
+
+        @include responsive(tab-land){
+            width: 100%;
+        }
+
+        @include responsive(tab-port){
+            width: 85%;
+        }
+
+        @include responsive(phone){
+            width: 100%;
+        }
+
+
+    }
+    &__item:not(:first-child){
+        @include margenItems;
+    }
+}
+.album {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include responsive(tab-port) { // width < 900?
+        width: 100%;
+    }
+
+    &__foto {
+        width: 15%;
+        border-radius: 50%;
+        margin-right: 1rem;
+
+        @include responsive(tab-land) { // width < 900?
+            width: 20%;
+        }
+
+        @include responsive(tab-port){
+            width: 15%;
+        }
+
+    }
+    &__descripcion {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        &--grande{
+            font-size: 1.3rem;
+            color: $color-gris;
+            text-transform: capitalize;
+            font-weight: 600;
+
+            @include responsive(phone) {
+                font-size: 1.1rem;
+            }
+
+        }
+        &--pequeña {
+            font-size: 1rem;
+            color: $color-gris;
+            text-transform: capitalize;
+            opacity: 0.8;
+
+            @include responsive(phone) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+.imagenPrincipal{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    @include responsive(tab-port) { // width < 900?
+        width: 50%; 
+        text-align: center;
+        order: 1;
+    }
+    & img {
+        width: 100%;
+    }
+}

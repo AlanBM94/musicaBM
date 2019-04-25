@@ -1,0 +1,56 @@
+.footer {
+    padding: 3rem 5rem;
+    background-color: $color-gris-oscuro;
+
+    @include responsive(phone){
+        padding: 2rem 4rem;
+    }
+
+    &__superior {
+        display: flex;
+        justify-content: space-between;
+
+        @include responsive(phone){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+    &__inferior {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    &__autor {
+        text-align: center;  
+
+        @include responsive(phone){
+            width: 90%;
+        }
+
+    }
+
+    &__logo {
+        align-self: center;
+        margin-left: 10rem;
+
+        @include responsive(phone){
+            margin-left: -2rem;
+        }
+
+    }
+    &__texto {
+        color: $color-blanco;
+        font-size: 1.3rem;
+        align-self: flex-end;
+        & span {
+            position: relative;
+        }
+    }
+    &__icono {
+        width: 2.2rem;
+        height: 2.2rem;
+        fill: $color-rojo;
+        margin-bottom: -5px;
+    }
+}

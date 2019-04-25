@@ -1,0 +1,2 @@
+Ingresa tu client_secret y tu client_id de la API de Spotify en el siguiente archivo 
+./server/authorization_code/app.js
