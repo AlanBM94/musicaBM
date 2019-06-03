@@ -7,7 +7,6 @@ export const limpiarLanzamientos =  () => {
 
 
 //Función para obtener la ciudad de los lanzamientos
-
 export const obtenerCiudad = () => elementos.inputLanzamiento.value;
 
 // Función que muestra el spinner

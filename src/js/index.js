@@ -88,7 +88,7 @@ const controladorCancion = async () => {
         const token = params.access_token;
         if (token) {
             spotifyApi.setAccessToken(token);
-            }
+        }
         //Se agrega al estado la busqueda de la canción
         estado.busquedaCancion = new BusquedaCancion(cancion.artista, cancion.cancion);
         //Prepara la UI para mostrar la letra de la canción

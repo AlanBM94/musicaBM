@@ -14,7 +14,7 @@ export default class BusquedaCancion {
         const resultadoBusqueda = await fetch(busqueda)
         .then(function(response) {
             return response.json();
-          })
+        })
         this.resultado = resultadoBusqueda.lyrics;
     }
 
